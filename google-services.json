@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "24061590223",
+    "project_id": "barbernew-d6ca6",
+    "storage_bucket": "barbernew-d6ca6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24061590223:android:da6d71bbc8dc8f44d215ba",
+        "android_client_info": {
+          "package_name": "com.natan494.barberapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyAGXaCIOYgavZYnw7CHBZMZQFvKaBqdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

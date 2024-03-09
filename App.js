@@ -1,20 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View, ScrollView } from "react-native";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import React, { useContext, useState, useEffect } from "react";
 
+import NavBar from "./components/navbar/NavBar";
+import HeroImg from "./components/heroImg/HeroImg";
+import Greet from "./components/greet/Greetings";
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <AuthContext.Provider value={user}>
+      <SafeAreaProvider>
+        <SafeAreaView>
+          <StatusBar animated={true} style={"light"} backgroundColor="black" />
+          <NavBar />
+          <HeroImg />
+          <ScrollView>
+            <View style={styles.container}>
+              <Greet />
+            </View>
+          </ScrollView>
+        </SafeAreaView>
+      </SafeAreaProvider>
+    </AuthContext.Provider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "white",
+    height: 1000,
+    borderRadius: 35,
   },
 });
